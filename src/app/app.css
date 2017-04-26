@@ -1,0 +1,45 @@
+.sidenav-container {
+    margin: -8px;
+    padding: 0px;
+    background-color: white;
+}
+
+.sidenav-content {
+    padding: 10px;
+    background-color: white;
+}
+
+.sidenav {
+    padding: 4px;
+    width: 200px;
+}
+
+.sidenav.sidenav-link {
+    margin:10px 0px 10px 0px;
+}
+
+.main-menu-icon {
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.main-menu-header {
+    vertical-align:middle;
+}
+
+.main-menu-icon.close {
+    padding:10px 0px 10px 0px;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #999;
+}
+
+a:visited {
+    color: black;
+}

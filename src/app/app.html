@@ -1,0 +1,144 @@
+<!-- <md-sidenav-container class="sidenav-container">
+
+    <md-sidenav #sidenav class="sidenav">
+        <md-list>
+         <md-list-item> <i class="material-icons main-menu-icon close" (click)="sidenav.close()">close</i><br/> </md-list-item>
+         <md-list-item> <a class="sidenav-link" routerLink="/ticket" (click)="sidenav.close()">Ticket</a> </md-list-item>
+        </md-list>        
+    </md-sidenav>
+    
+    <div class="sidenav-content">
+
+        <div class="main-menu-header">
+            <i class="material-icons main-menu-icon" (click)="sidenav.open()">menu</i>
+        </div>
+        
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
+ -->
+
+ <div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+        <ul class="nav navbar-nav pull-right visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-paragraph-justify3"></i></a></li>
+            <!-- <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li> -->
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown language-switch">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/images/flags/gb.png" class="position-left" alt="">
+                    English
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a></li>
+                    <li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
+                    <li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
+                    <li><a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a></li>
+                    <li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/images/placeholder.jpg" alt="">
+                    <span>Victoria</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                    <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                    <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                    <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Second navbar -->
+<div class="navbar navbar-default affix-top" id="navbar-second">
+    <ul class="nav navbar-nav no-border visible-xs-block">
+        <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+    </ul>
+
+    <div class="navbar-collapse collapse" id="navbar-second-toggle">
+        <ul class="nav navbar-nav">
+            <li><a href="#"><i class="icon-display4 position-left"></i> Dashboard</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-strategy position-left"></i> Starter kit <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu width-200">
+                    <li class="dropdown-header">Basic layouts</li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i> Columns</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header highlight">Options</li>
+                            <li><a href="starters/1_col.html">One column</a></li>
+                            <li><a href="starters/2_col.html">Two columns</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Three columns</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header highlight">Sidebar position</li>
+                                    <li><a href="starters/3_col_dual.html">Dual sidebars</a></li>
+                                    <li><a href="starters/3_col_double.html">Double sidebars</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="starters/4_col.html">Four columns</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-paragraph-justify3"></i> Navbars</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header highlight">Fixed navbars</li>
+                            <li><a href="starters/layout_navbar_fixed_main.html">Fixed main navbar</a></li>
+                            <li><a href="starters/layout_navbar_fixed_secondary.html">Fixed secondary navbar</a></li>
+                            <li><a href="starters/layout_navbar_fixed_both.html">Both navbars fixed</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-header">Optional layouts</li>
+                    <li><a href="starters/layout_boxed.html"><i class="icon-align-center-horizontal"></i> Fixed width</a></li>
+                    <li><a href="starters/layout_sidebar_sticky.html"><i class="icon-flip-vertical3"></i> Sticky sidebar</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<!-- /second navbar -->
+
+
+<!-- Page header -->
+<div class="page-header">
+    <div class="page-header-content">
+        <div class="page-title">
+            <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Mailbox</span> - List</h4>
+
+            <ul class="breadcrumb breadcrumb-caret position-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mail_list.html">Mailbox</a></li>
+                <li class="active">List</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /page header -->
+
+<!-- Page container -->
+<div class="page-container">
+    <router-outlet></router-outlet>
+</div>
